@@ -1,0 +1,20 @@
+.container {
+    width: 60%;
+    margin: auto;
+}
+.remember-me {
+    text-align: center;
+}
+.btn-login {
+    width: 100%;
+}
+
+
+.header {min-height:46px; background:#005fc8}
+
+.footer {
+	background-color: #f0efef;	border-top:1px solid #d1d1d1;margin-top: 20px;padding: 0;color:#FFF;font-size:11px; width: 100%; bottom: 0; position: absolute;
+}
+
+.footer-copyright { background-color:#616060}
+.copyright-text { padding:15px 0; color:#dfdfdf; font-size:11px;}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Authentication Client</title>
+    <link href="../../static/css/bootstrap.min.css"
+          th:href="@{css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+    <link href="../../static/css/layout.css"
+          th:href="@{css/layout.css}" rel="stylesheet" media="screen"/>
+
+</head>
+<body>
+<div class="header"></div>
+<div class="container">
+    <h4>Authentication Request Details</h4>
+    <div>
+        <form class="form-horizontal" id="requestForm" name="requestForm" th:object="${authRequest}" method="post">
+            <div class="form-group">
+                <label>Token Endpoint:</label>
+                <div>
+                    <input type="text" class="form-control" th:field="*{tokenEndPoint}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>User Endpoint:</label>
+                <div>
+                    <input type="text" class="form-control" th:field="*{userEndPoint}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Client Name:</label>
+                <div>
+                    <input type="text" class="form-control" th:field="*{clientName}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Client Secret:</label>
+                <div>
+                    <input type="password" class="form-control" th:field="*{clientSecret}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>User Name:</label>
+                <div>
+                    <input type="text" class="form-control" th:field="*{userName}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>User Password:</label>
+                <div>
+                    <input type="password" class="form-control" th:field="*{password}"/>
+                </div>
+            </div>
+             <div class="form-group">
+                <label>Grant Type:</label>
+                <div>
+                    <input type="text" class="form-control" th:field="*{grantType}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Scope:</label>
+                <div>
+                    <input type="text" class="form-control" th:field="*{scope}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <button type="submit" id="bth-request" class="btn btn-primary btn-lg">Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+    <div id="message" class="col-xs-12"></div>
+    </div>
+</div>
+<script type="text/javascript"
+        src="webjars/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/oidc.js"></script>
+
+</body>
+</html>
