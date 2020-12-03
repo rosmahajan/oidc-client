@@ -5,9 +5,9 @@
 
 	<groupId>com.ros.openid.connect</groupId>
 	<artifactId>oidc-client</artifactId>
-	<version>1.0</version>
+	<version>1.1</version>
 	<packaging>jar</packaging>
-	<name>Spring Boot Web Application</name>
+	<name>Spring Boot Web Application11111</name>
 	<description>Spring Boot Web Application</description>
 
 	<parent>
@@ -15,6 +15,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
+		<!-- LOOK UP -->
 	</parent>
 
 	<properties>
